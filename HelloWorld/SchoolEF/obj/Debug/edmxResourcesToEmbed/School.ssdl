@@ -25,6 +25,7 @@
     <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="UserPassword" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserPhone" Type="nchar" MaxLength="12" Nullable="false" />
   </EntityType>
   <Association Name="FK_UserClasses_ClassMaster">
     <End Role="ClassMaster" Type="Self.ClassMaster" Multiplicity="1" />

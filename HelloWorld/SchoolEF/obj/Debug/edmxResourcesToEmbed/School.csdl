@@ -19,6 +19,7 @@
     <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="UserPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="ClassMasters" Relationship="Self.UserClasses" FromRole="Users" ToRole="ClassMaster" />
+    <Property Name="UserPhone" Type="String" Nullable="false" MaxLength="12" FixedLength="true" Unicode="true" />
   </EntityType>
   <Association Name="UserClasses">
     <End Role="ClassMaster" Type="Self.ClassMaster" Multiplicity="*" />

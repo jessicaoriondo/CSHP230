@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="SchoolModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="SchoolModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="ClassMaster">
           <Key>
             <PropertyRef Name="ClassId" />
@@ -30,6 +30,7 @@
           <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="UserPassword" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="UserPhone" Type="nchar" MaxLength="12" Nullable="false" />
         </EntityType>
         <Association Name="FK_UserClasses_ClassMaster">
           <End Role="ClassMaster" Type="Self.ClassMaster" Multiplicity="1" />
@@ -71,8 +72,7 @@
             <End Role="UserClasses" EntitySet="UserClasses" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="SchoolModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -95,6 +95,7 @@
           <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="UserPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="ClassMasters" Relationship="Self.UserClasses" FromRole="Users" ToRole="ClassMaster" />
+          <Property Name="UserPhone" Type="String" Nullable="false" MaxLength="12" FixedLength="true" Unicode="true" />
         </EntityType>
         <Association Name="UserClasses">
           <End Role="ClassMaster" Type="Self.ClassMaster" Multiplicity="*" />
@@ -108,7 +109,7 @@
             <End Role="Users" EntitySet="Users" />
           </AssociationSet>
           <FunctionImport Name="RetrieveClassesForStudent" ReturnType="Collection(SchoolModel.RetrieveClassesForStudent_Result)">
-            <Parameter Name="UserId" Mode="In" Type="Int32" />
+          <Parameter Name="UserId" Mode="In" Type="Int32" />
           </FunctionImport>
         </EntityContainer>
         <ComplexType Name="RetrieveClassesForStudent_Result">
@@ -135,6 +136,7 @@
           <EntitySetMapping Name="Users">
             <EntityTypeMapping TypeName="SchoolModel.User">
               <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="UserPhone" ColumnName="UserPhone" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
                 <ScalarProperty Name="UserName" ColumnName="UserName" />
                 <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />

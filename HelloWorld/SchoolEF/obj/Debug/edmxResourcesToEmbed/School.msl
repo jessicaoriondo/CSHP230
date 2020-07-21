@@ -15,6 +15,7 @@
     <EntitySetMapping Name="Users">
       <EntityTypeMapping TypeName="SchoolModel.User">
         <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserPhone" ColumnName="UserPhone" />
           <ScalarProperty Name="UserId" ColumnName="UserId" />
           <ScalarProperty Name="UserName" ColumnName="UserName" />
           <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
