@@ -77,3 +77,12 @@
 7/20/2020 10:15:55 PM : Elapsed=00:00:00.0000085 : Action=Index
 7/20/2020 10:15:55 PM : Elapsed=00:00:00.0000270 : Action=IncrementCount
 7/20/2020 10:15:55 PM : Elapsed=00:00:00.0000118 : Action=DisplayLoginName
+7/21/2020 6:53:04 PM : Elapsed=00:00:00.0166379 : Action=Index
+7/21/2020 6:53:06 PM : Elapsed=00:00:00.0009585 : Action=IncrementCount
+7/21/2020 6:53:06 PM : Elapsed=00:00:00.0003563 : Action=DisplayLoginName
+7/21/2020 6:55:21 PM : Elapsed=00:00:00.0010455 : Action=SetCookie
+7/21/2020 6:56:39 PM : Elapsed=00:00:00.0000230 : Action=SetCookie
+7/21/2020 7:09:17 PM : Elapsed=00:00:00.0176707 : Action=GetCookie
+7/21/2020 7:10:41 PM : Elapsed=00:00:00.0145165 : Action=GetCookie
+7/21/2020 7:10:57 PM : Elapsed=00:00:00.0012308 : Action=setCookie
+7/21/2020 7:11:05 PM : Elapsed=00:00:00.0000638 : Action=GetCookie
