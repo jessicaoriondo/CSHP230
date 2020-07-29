@@ -20,6 +20,13 @@ namespace HelloWorld.Controllers
             this.productRepository = productRepository;
         }
 
+        [Authorize]
+        [IsAdministrator]
+        public ActionResult Notes()
+        {
+            return View();
+        }
+
         public ActionResult SetCookie()
         {
             // Name the cookie as MyCookie for later retrieval
@@ -66,6 +73,23 @@ namespace HelloWorld.Controllers
             return new PartialViewResult();
         }
 
+        public PartialViewResult IncrementCount()
+        {
+            int count = 0;
+
+            // Check if MyCount exists
+            if (Session["MyCount"] != null)
+            {
+                count = (int)Session["MyCount"];
+                count++;
+            }
+
+            // Create the MyCount session variable
+            Session["MyCount"] = count;
+
+            return new PartialViewResult();
+        }
+
 
         // GET: Home
         public ActionResult Index()
@@ -106,23 +130,6 @@ namespace HelloWorld.Controllers
         public ActionResult Products()
         {
             return View(productRepository.Products);
-        }
-
-        public PartialViewResult IncrementCount()
-        {
-            int count = 0;
-
-            // Check if MyCount exists
-            if (Session["MyCount"] != null)
-            {
-                count = (int)Session["MyCount"];
-                count++;
-            }
-
-            // Create the MyCount session variable
-            Session["MyCount"] = count;
-
-            return new PartialViewResult();
         }
 
 
