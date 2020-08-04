@@ -1,0 +1,12 @@
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.ProductDatabase\bin\Debug\netcoreapp2.1\Ziggle.ProductDatabase.deps.json
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.ProductDatabase\bin\Debug\netcoreapp2.1\Ziggle.ProductDatabase.dll
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.ProductDatabase\bin\Debug\netcoreapp2.1\Ziggle.ProductDatabase.pdb
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.ProductDatabase\obj\Debug\netcoreapp2.1\Ziggle.ProductDatabase.csprojAssemblyReference.cache
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.ProductDatabase\obj\Debug\netcoreapp2.1\Ziggle.ProductDatabase.AssemblyInfoInputs.cache
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.ProductDatabase\obj\Debug\netcoreapp2.1\Ziggle.ProductDatabase.AssemblyInfo.cs
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.ProductDatabase\obj\Debug\netcoreapp2.1\Ziggle.ProductDatabase.dll
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.ProductDatabase\obj\Debug\netcoreapp2.1\Ziggle.ProductDatabase.pdb
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.ProductDatabase\bin\Debug\netcoreapp2.1\Ziggle.ProductDatabase.runtimeconfig.json
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.ProductDatabase\bin\Debug\netcoreapp2.1\Ziggle.ProductDatabase.runtimeconfig.dev.json
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.ProductDatabase\obj\Debug\netcoreapp2.1\Ziggle.ProductDatabase.genruntimeconfig.cache
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.ProductDatabase\obj\Debug\netcoreapp2.1\Ziggle.ProductDatabase.csproj.CoreCompileInputs.cache
