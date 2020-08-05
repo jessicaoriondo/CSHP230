@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Ziggle.WebSite.Models;
 using Ziggle.Business;
+using Newtonsoft.Json;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using System.Security.Claims;
 
 namespace Ziggle.WebSite.Controllers
 {
@@ -14,6 +19,8 @@ namespace Ziggle.WebSite.Controllers
 
         private readonly ICategoryManager categoryManager;
         private readonly IProductManager productManager;
+        private readonly IUserManager userManager;
+
 
         public IActionResult Index()
         {
@@ -25,10 +32,94 @@ namespace Ziggle.WebSite.Controllers
         }
 
 
-        public HomeController(ICategoryManager categoryManager, IProductManager productManager)
+        public HomeController(ICategoryManager categoryManager, IProductManager productManager, IUserManager userManager)
         {
             this.categoryManager = categoryManager;
             this.productManager = productManager;
+            this.userManager = userManager;
+
+        }
+
+        public ActionResult LogIn()
+        {
+            ViewData["ReturnUrl"] = Request.Query["returnUrl"];
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult LogIn(LoginModel loginModel, string returnUrl)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = userManager.LogIn(loginModel.UserName, loginModel.Password);
+
+                if (user == null)
+                {
+                    ModelState.AddModelError("", "User name and password do not match.");
+                }
+                else
+                {
+                    var json = JsonConvert.SerializeObject(new Ziggle.WebSite.Models.UserModel
+                    {
+                        Id = user.Id,
+                        Name = user.Name
+                    });
+
+                    HttpContext.Session.SetString("User", json);
+
+                    var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, user.Name),
+                    new Claim(ClaimTypes.Role, "User"),
+                };
+
+                    var claimsIdentity = new ClaimsIdentity(claims,
+                        CookieAuthenticationDefaults.AuthenticationScheme);
+
+                    var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
+
+                    var authProperties = new AuthenticationProperties
+                    {
+                        AllowRefresh = false,
+                        // Refreshing the authentication session should be allowed.
+
+                        ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(10),
+                        // The time at which the authentication ticket expires. A 
+                        // value set here overrides the ExpireTimeSpan option of 
+                        // CookieAuthenticationOptions set with AddCookie.
+
+                        IsPersistent = false,
+                        // Whether the authentication session is persisted across 
+                        // multiple requests. When used with cookies, controls
+                        // whether the cookie's lifetime is absolute (matching the
+                        // lifetime of the authentication ticket) or session-based.
+
+                        IssuedUtc = DateTimeOffset.UtcNow,
+                        // The time at which the authentication ticket was issued.
+                    };
+
+                    HttpContext.SignInAsync(
+                        CookieAuthenticationDefaults.AuthenticationScheme,
+                        claimsPrincipal,
+                        authProperties).Wait();
+
+                    return Redirect(returnUrl ?? "~/");
+                }
+            }
+
+            ViewData["ReturnUrl"] = returnUrl;
+
+            return View(loginModel);
+        }
+
+        public ActionResult LogOff()
+        {
+            HttpContext.Session.Remove("User");
+
+            HttpContext.SignOutAsync(
+            CookieAuthenticationDefaults.AuthenticationScheme);
+
+            return Redirect("~/");
         }
 
         public ActionResult Category(int id)

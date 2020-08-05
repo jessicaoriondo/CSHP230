@@ -14,6 +14,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Ziggle.Business;
 using Ziggle.Repository;
+using Microsoft.AspNetCore.Authentication.Cookies;
+
 
 namespace Ziggle.WebSite
 {
@@ -31,8 +33,22 @@ namespace Ziggle.WebSite
         {
             services.AddSingleton<IProductManager, ProductManager>();
             services.AddSingleton<IProductRepository, ProductRepository>();
+            
             services.AddSingleton<ICategoryManager, CategoryManager>();
             services.AddSingleton<ICategoryRepository, CategoryRepository>();
+
+            services.AddSingleton<IUserManager, UserManager>();
+            services.AddSingleton<IUserRepository, UserRepository>();
+
+            services.AddSession();
+
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+            .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
+            {
+                options.LoginPath = new PathString("/Home/Login");
+                options.AccessDeniedPath = new PathString("/Account/Denied");
+            });
+
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
@@ -71,6 +87,9 @@ namespace Ziggle.WebSite
             app.UseCookiePolicy();
 
             app.UseAuthentication();
+
+            app.UseSession(); // before UseMvc
+
 
             app.UseMvc(routes =>
             {

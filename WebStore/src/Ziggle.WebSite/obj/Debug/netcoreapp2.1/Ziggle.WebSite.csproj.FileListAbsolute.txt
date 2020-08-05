@@ -46,3 +46,4 @@ C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Web
 C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.WebSite\obj\Debug\netcoreapp2.1\Ziggle.WebSite.csproj.CoreCompileInputs.cache
 C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.WebSite\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.WebSite\obj\Debug\netcoreapp2.1\Razor\Views\Home\Category.cshtml.g.cs
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.WebSite\obj\Debug\netcoreapp2.1\Razor\Views\Home\LogIn.cshtml.g.cs
