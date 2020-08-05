@@ -29,6 +29,8 @@ namespace Ziggle.WebSite
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<IProductManager, ProductManager>();
+            services.AddSingleton<IProductRepository, ProductRepository>();
             services.AddSingleton<ICategoryManager, CategoryManager>();
             services.AddSingleton<ICategoryRepository, CategoryRepository>();
             services.Configure<CookiePolicyOptions>(options =>

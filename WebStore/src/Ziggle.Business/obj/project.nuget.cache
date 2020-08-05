@@ -1,14 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "pzCqz3BooEpjPfAQ8ByTtJ4ZB4XHG/4jCy/oF1/kuw94wIBq9ysM7HWrf5jhpiPHEy+LXr4fYlYTRes1kFOYFg==",
+  "dgSpecHash": "ihuwKGAAlAp+gCKIBUFT++sm/yHSRSwmZDUqEkPvf87AqQfVR5lLzfn7k2EGvtU1kUtETceYqU4HeOWp79rm/g==",
   "success": true,
   "projectFilePath": "C:\\Users\\jekor\\OneDrive\\Desktop\\CSHP220\\Projects\\CSHP230\\WebStore\\src\\Ziggle.Business\\Ziggle.Business.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jekor\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\jekor\\.nuget\\packages\\microsoft.entityframeworkcore\\2.1.14\\microsoft.entityframeworkcore.2.1.14.nupkg.sha512",
     "C:\\Users\\jekor\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\2.1.14\\microsoft.entityframeworkcore.abstractions.2.1.14.nupkg.sha512",
     "C:\\Users\\jekor\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\2.1.14\\microsoft.entityframeworkcore.analyzers.2.1.14.nupkg.sha512",
+    "C:\\Users\\jekor\\.nuget\\packages\\microsoft.entityframeworkcore.design\\2.1.14\\microsoft.entityframeworkcore.design.2.1.14.nupkg.sha512",
     "C:\\Users\\jekor\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\2.1.14\\microsoft.entityframeworkcore.relational.2.1.14.nupkg.sha512",
     "C:\\Users\\jekor\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\2.1.14\\microsoft.entityframeworkcore.sqlserver.2.1.14.nupkg.sha512",
+    "C:\\Users\\jekor\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\2.1.14\\microsoft.entityframeworkcore.tools.2.1.14.nupkg.sha512",
     "C:\\Users\\jekor\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\2.1.1\\microsoft.extensions.caching.abstractions.2.1.1.nupkg.sha512",
     "C:\\Users\\jekor\\.nuget\\packages\\microsoft.extensions.caching.memory\\2.1.1\\microsoft.extensions.caching.memory.2.1.1.nupkg.sha512",
     "C:\\Users\\jekor\\.nuget\\packages\\microsoft.extensions.configuration\\2.1.1\\microsoft.extensions.configuration.2.1.1.nupkg.sha512",

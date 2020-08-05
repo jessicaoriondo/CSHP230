@@ -69,7 +69,7 @@ using Ziggle.WebSite.Models;
             WriteLiteral("        <div class=\"col-md-4\">\r\n            <h2>");
             EndContext();
             BeginContext(327, 71, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "02ef3a0fae964c4090cb1e9c5c99a822", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "06ab9c1b6c944473b9af7f4754c1f5e2", async() => {
                 BeginContext(381, 13, false);
 #line 15 "C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.WebSite\Views\Home\Index.cshtml"
                                                                 Write(category.Name);

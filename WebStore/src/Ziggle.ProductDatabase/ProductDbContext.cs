@@ -19,10 +19,9 @@ namespace Ziggle.ProductDatabase
         public virtual DbSet<Order> Order { get; set; }
         public virtual DbSet<OrderItem> OrderItem { get; set; }
         public virtual DbSet<Product> Product { get; set; }
+        public virtual DbSet<ProductCategory> ProductCategory { get; set; }
         public virtual DbSet<ShoppingCartItem> ShoppingCartItem { get; set; }
         public virtual DbSet<User> User { get; set; }
-
-        // Unable to generate entity type for table 'dbo.ProductCategory'. Please see the warning messages.
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -81,6 +80,23 @@ namespace Ziggle.ProductDatabase
                     .HasMaxLength(50);
 
                 entity.Property(e => e.ProductPrice).HasColumnType("smallmoney");
+            });
+
+            modelBuilder.Entity<ProductCategory>(entity =>
+            {
+                entity.HasKey(e => new { e.CategoryId, e.ProductId });
+
+                entity.HasOne(d => d.Category)
+                    .WithMany(p => p.ProductCategory)
+                    .HasForeignKey(d => d.CategoryId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_ProductCategory_Category");
+
+                entity.HasOne(d => d.Product)
+                    .WithMany(p => p.ProductCategory)
+                    .HasForeignKey(d => d.ProductId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_ProductCategory_Product");
             });
 
             modelBuilder.Entity<ShoppingCartItem>(entity =>

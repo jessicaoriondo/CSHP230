@@ -10,3 +10,6 @@ C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Rep
 C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Repository\obj\Debug\netcoreapp2.1\Ziggle.Repository.dll
 C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Repository\obj\Debug\netcoreapp2.1\Ziggle.Repository.pdb
 C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Repository\obj\Debug\netcoreapp2.1\Ziggle.Repository.csproj.CoreCompileInputs.cache
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Repository\bin\Debug\netcoreapp2.1\Ziggle.Repository.runtimeconfig.json
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Repository\bin\Debug\netcoreapp2.1\Ziggle.Repository.runtimeconfig.dev.json
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Repository\obj\Debug\netcoreapp2.1\Ziggle.Repository.genruntimeconfig.cache

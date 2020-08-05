@@ -8,6 +8,7 @@ namespace Ziggle.ProductDatabase
         public Product()
         {
             OrderItem = new HashSet<OrderItem>();
+            ProductCategory = new HashSet<ProductCategory>();
             ShoppingCartItem = new HashSet<ShoppingCartItem>();
         }
 
@@ -17,6 +18,7 @@ namespace Ziggle.ProductDatabase
         public int ProductQuantity { get; set; }
 
         public ICollection<OrderItem> OrderItem { get; set; }
+        public ICollection<ProductCategory> ProductCategory { get; set; }
         public ICollection<ShoppingCartItem> ShoppingCartItem { get; set; }
     }
 }

@@ -12,3 +12,6 @@ C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Bus
 C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Business\obj\Debug\netcoreapp2.1\Ziggle.Business.dll
 C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Business\obj\Debug\netcoreapp2.1\Ziggle.Business.pdb
 C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Business\obj\Debug\netcoreapp2.1\Ziggle.Business.csproj.CoreCompileInputs.cache
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Business\bin\Debug\netcoreapp2.1\Ziggle.Business.runtimeconfig.json
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Business\bin\Debug\netcoreapp2.1\Ziggle.Business.runtimeconfig.dev.json
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Business\obj\Debug\netcoreapp2.1\Ziggle.Business.genruntimeconfig.cache
