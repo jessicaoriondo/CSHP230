@@ -1,0 +1,12 @@
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\HelloWorld\SchoolEF\bin\Debug\SchoolEF.exe.config
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\HelloWorld\SchoolEF\bin\Debug\SchoolEF.exe
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\HelloWorld\SchoolEF\bin\Debug\SchoolEF.pdb
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\HelloWorld\SchoolEF\bin\Debug\EntityFramework.dll
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\HelloWorld\SchoolEF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\HelloWorld\SchoolEF\bin\Debug\EntityFramework.xml
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\HelloWorld\SchoolEF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\HelloWorld\SchoolEF\obj\Debug\SchoolEF.csprojAssemblyReference.cache
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\HelloWorld\SchoolEF\obj\Debug\SchoolEF.csproj.CoreCompileInputs.cache
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\HelloWorld\SchoolEF\obj\Debug\SchoolEF.csproj.CopyComplete
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\HelloWorld\SchoolEF\obj\Debug\SchoolEF.exe
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\HelloWorld\SchoolEF\obj\Debug\SchoolEF.pdb

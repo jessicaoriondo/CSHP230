@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SchoolModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ClassMaster">
+    <Key>
+      <PropertyRef Name="ClassId" />
+    </Key>
+    <Property Name="ClassId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClassName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ClassDescription" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ClassPrice" Type="float" Nullable="false" />
+    <Property Name="ClassSessions" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserClasses">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="ClassId" />
+    </Key>
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="ClassId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserPassword" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserPhone" Type="nchar" MaxLength="12" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_UserClasses_ClassMaster">
+    <End Role="ClassMaster" Type="Self.ClassMaster" Multiplicity="1" />
+    <End Role="UserClasses" Type="Self.UserClasses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClassMaster">
+        <PropertyRef Name="ClassId" />
+      </Principal>
+      <Dependent Role="UserClasses">
+        <PropertyRef Name="ClassId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserClasses_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="UserClasses" Type="Self.UserClasses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserClasses">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="RetrieveClassesForStudent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="SchoolModelStoreContainer">
+    <EntitySet Name="ClassMaster" EntityType="Self.ClassMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserClasses" EntityType="Self.UserClasses" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_UserClasses_ClassMaster" Association="Self.FK_UserClasses_ClassMaster">
+      <End Role="ClassMaster" EntitySet="ClassMaster" />
+      <End Role="UserClasses" EntitySet="UserClasses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserClasses_Users" Association="Self.FK_UserClasses_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserClasses" EntitySet="UserClasses" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

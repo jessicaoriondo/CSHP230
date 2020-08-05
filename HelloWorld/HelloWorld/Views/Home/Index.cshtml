@@ -7,6 +7,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <style>
         .btn a {
@@ -22,6 +23,12 @@
 <body>
     <div class="text-center">
         <h2>The party is tonight.</h2>
+
+        @Html.Action("IncrementCount")
+
+        @Html.ActionLink("Login", "Login")
+        @Html.ActionLink("Logoff", "Logoff")
+        @Html.Action("DisplayLoginName")
         <h3>And you're invited</h3>
 
         <div class="btn btn-success">
@@ -34,6 +41,18 @@
 
         <div class="btn btn-success">
             @Html.ActionLink("View Products", "Products")
+        </div>
+
+        <div class="btn btn-success">
+            @Html.ActionLink("Set cookie", "SetCookie")
+        </div>
+
+        <div class="btn btn-success">
+            @Html.ActionLink("Secure Notes", "Notes")
+        </div>
+
+        <div class="btn btn-success">
+            @Html.ActionLink("Logout", "LogOut", "Account")
         </div>
     </div>
 </body>

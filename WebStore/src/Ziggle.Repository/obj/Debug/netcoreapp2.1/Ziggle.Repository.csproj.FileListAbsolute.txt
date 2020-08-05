@@ -1,0 +1,15 @@
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Repository\bin\Debug\netcoreapp2.1\Ziggle.Repository.deps.json
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Repository\bin\Debug\netcoreapp2.1\Ziggle.Repository.dll
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Repository\bin\Debug\netcoreapp2.1\Ziggle.Repository.pdb
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Repository\bin\Debug\netcoreapp2.1\Ziggle.ProductDatabase.dll
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Repository\bin\Debug\netcoreapp2.1\Ziggle.ProductDatabase.pdb
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Repository\obj\Debug\netcoreapp2.1\Ziggle.Repository.csprojAssemblyReference.cache
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Repository\obj\Debug\netcoreapp2.1\Ziggle.Repository.AssemblyInfoInputs.cache
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Repository\obj\Debug\netcoreapp2.1\Ziggle.Repository.AssemblyInfo.cs
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Repository\obj\Debug\netcoreapp2.1\Ziggle.Repository.csproj.CopyComplete
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Repository\obj\Debug\netcoreapp2.1\Ziggle.Repository.dll
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Repository\obj\Debug\netcoreapp2.1\Ziggle.Repository.pdb
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Repository\obj\Debug\netcoreapp2.1\Ziggle.Repository.csproj.CoreCompileInputs.cache
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Repository\bin\Debug\netcoreapp2.1\Ziggle.Repository.runtimeconfig.json
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Repository\bin\Debug\netcoreapp2.1\Ziggle.Repository.runtimeconfig.dev.json
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Repository\obj\Debug\netcoreapp2.1\Ziggle.Repository.genruntimeconfig.cache

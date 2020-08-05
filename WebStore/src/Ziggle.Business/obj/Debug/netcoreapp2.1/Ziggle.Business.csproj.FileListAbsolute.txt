@@ -1,0 +1,17 @@
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Business\bin\Debug\netcoreapp2.1\Ziggle.Business.deps.json
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Business\bin\Debug\netcoreapp2.1\Ziggle.Business.dll
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Business\bin\Debug\netcoreapp2.1\Ziggle.Business.pdb
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Business\bin\Debug\netcoreapp2.1\Ziggle.ProductDatabase.dll
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Business\bin\Debug\netcoreapp2.1\Ziggle.Repository.dll
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Business\bin\Debug\netcoreapp2.1\Ziggle.Repository.pdb
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Business\bin\Debug\netcoreapp2.1\Ziggle.ProductDatabase.pdb
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Business\obj\Debug\netcoreapp2.1\Ziggle.Business.csprojAssemblyReference.cache
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Business\obj\Debug\netcoreapp2.1\Ziggle.Business.AssemblyInfoInputs.cache
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Business\obj\Debug\netcoreapp2.1\Ziggle.Business.AssemblyInfo.cs
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Business\obj\Debug\netcoreapp2.1\Ziggle.Business.csproj.CopyComplete
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Business\obj\Debug\netcoreapp2.1\Ziggle.Business.dll
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Business\obj\Debug\netcoreapp2.1\Ziggle.Business.pdb
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Business\obj\Debug\netcoreapp2.1\Ziggle.Business.csproj.CoreCompileInputs.cache
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Business\bin\Debug\netcoreapp2.1\Ziggle.Business.runtimeconfig.json
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Business\bin\Debug\netcoreapp2.1\Ziggle.Business.runtimeconfig.dev.json
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\WebStore\src\Ziggle.Business\obj\Debug\netcoreapp2.1\Ziggle.Business.genruntimeconfig.cache
