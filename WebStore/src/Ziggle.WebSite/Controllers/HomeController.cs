@@ -11,6 +11,10 @@ namespace Ziggle.WebSite.Controllers
 {
     public class HomeController : Controller
     {
+
+        private readonly ICategoryManager categoryManager;
+        private readonly IProductManager productManager;
+
         public IActionResult Index()
         {
             var categories = categoryManager.Categories
@@ -20,8 +24,6 @@ namespace Ziggle.WebSite.Controllers
             return View(model);
         }
 
-        private readonly ICategoryManager categoryManager;
-        private readonly IProductManager productManager;
 
         public HomeController(ICategoryManager categoryManager, IProductManager productManager)
         {
