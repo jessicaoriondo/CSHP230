@@ -90,7 +90,7 @@ Write(String.Format("{0} - {1:c}", product.Name, product.Price));
             WriteLiteral("    ");
             EndContext();
             BeginContext(248, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0498242791e74b8096f63dfe71391ece", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fbfa8d8d231047b8a055d5ee316136d3", async() => {
                 BeginContext(301, 12, true);
                 WriteLiteral(" Add to cart");
                 EndContext();

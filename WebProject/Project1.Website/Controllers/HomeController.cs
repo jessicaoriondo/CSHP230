@@ -59,9 +59,9 @@ namespace Project1.Website.Controllers
 
             ViewBag.successMessage = "Registration Successful";
 
-            return View();
+            return Redirect("~/Home/Login");
 
-            }
+        }
 
         [HttpPost]
         public ActionResult LogIn(LoginModel loginModel, string returnUrl)
@@ -103,6 +103,13 @@ namespace Project1.Website.Controllers
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
+
+        public ActionResult Contact()
+        {
+            ViewBag.Message = "Your application contact page.";
 
             return View();
         }

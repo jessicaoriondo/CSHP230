@@ -11,6 +11,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Identity.UI.Pages.Account.Internal;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Ziggle.WebSite.Controllers
 {
@@ -20,6 +22,7 @@ namespace Ziggle.WebSite.Controllers
         private readonly ICategoryManager categoryManager;
         private readonly IProductManager productManager;
         private readonly IUserManager userManager;
+        private readonly IShoppingCartManager shoppingCartManager;
 
 
         public IActionResult Index()
@@ -32,12 +35,53 @@ namespace Ziggle.WebSite.Controllers
         }
 
 
-        public HomeController(ICategoryManager categoryManager, IProductManager productManager, IUserManager userManager)
+        public HomeController(ICategoryManager categoryManager, IProductManager productManager, IUserManager userManager,
+            IShoppingCartManager shoppingCartManager)
         {
             this.categoryManager = categoryManager;
             this.productManager = productManager;
             this.userManager = userManager;
+            this.shoppingCartManager = shoppingCartManager;
 
+        }
+
+
+        [Authorize]
+        public ActionResult AddToCart(int id)
+        {
+            var user = JsonConvert.DeserializeObject<Models.UserModel>(HttpContext.Session.GetString("User"));
+
+            var item = shoppingCartManager.Add(user.Id, id, 1);
+            var items = shoppingCartManager.GetAll(user.Id)
+                .Select(t => new Ziggle.WebSite.Models.ShoppingCartItem
+                {
+                    ProductId = t.ProductId,
+                    ProductName =t.ProductName,
+                    ProductPrice = t.ProductPrice,
+                    Quantity = t.Quantity
+                })
+                .ToArray();
+            return View(items);
+        }
+
+        [HttpGet]
+        public ActionResult Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Register(Models.RegisterModel registerModel)
+        {
+            if (ModelState.IsValid)
+            {
+                userManager.Register(registerModel.UserName, registerModel.Password);
+                return Redirect("~/");
+
+            }
+            else {
+                return View();
+            }
         }
 
         public ActionResult LogIn()
@@ -47,7 +91,7 @@ namespace Ziggle.WebSite.Controllers
         }
 
         [HttpPost]
-        public ActionResult LogIn(LoginModel loginModel, string returnUrl)
+        public ActionResult LogIn(Models.LoginModel loginModel, string returnUrl)
         {
             if (ModelState.IsValid)
             {
