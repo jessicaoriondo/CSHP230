@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Project1
+namespace Website.Project1
 {
     using System;
     using System.Data.Entity;

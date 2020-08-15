@@ -1,4 +1,5 @@
-﻿@{
+﻿@*@@model Project1.Models.ClassesViewModel*@
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -24,3 +25,10 @@
         <p>Take a new class.</p>
     </div>
 </div>
+
+@*<div class="row">
+    @foreach (var iclass in Model.Classes)
+    { 
+        @String.Format("{0} - {1} - {2} - {3:c}", iclass.Id, iclass.Name, iclass.Description, iclass.Price)<br/>
+    }
+</div>*@

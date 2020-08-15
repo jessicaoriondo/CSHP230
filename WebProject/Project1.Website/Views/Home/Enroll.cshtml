@@ -1,0 +1,51 @@
+﻿@model Project1.Website.Models.ClassRegistrationModel
+
+@{
+    ViewBag.Title = "Enroll";
+}
+
+<h2>Enroll In Class</h2>
+
+
+@using (Html.BeginForm())
+
+{
+    @Html.AntiForgeryToken()
+
+    <br />
+    <br />
+
+    <table>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <tr>
+            <td class="col-md-2">
+                <span class="form-group">
+                    @Html.DropDownListFor(model => model.myClassIdToAdd, new SelectList(Model.myClasses, "Id", "Name", Model.myClassIdToAdd), htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.myClassIdToAdd, "", new { @class = "text-danger", Model.myClassIdToAdd })
+                </span>
+            </td>
+            <td class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Add Class" class="btn btn-default" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-2">
+                        <label class="label-success">@ViewBag.successMessage</label>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+    </table>
+
+
+
+
+
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
