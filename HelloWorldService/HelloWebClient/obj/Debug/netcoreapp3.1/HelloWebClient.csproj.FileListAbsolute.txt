@@ -1,0 +1,4 @@
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\HelloWorldService\HelloWebClient\bin\Debug\netcoreapp3.1\HelloWebClient.exe
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\HelloWorldService\HelloWebClient\obj\Debug\netcoreapp3.1\HelloWebClient.csprojAssemblyReference.cache
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\HelloWorldService\HelloWebClient\obj\Debug\netcoreapp3.1\HelloWebClient.AssemblyInfoInputs.cache
+C:\Users\jekor\OneDrive\Desktop\CSHP220\Projects\CSHP230\HelloWorldService\HelloWebClient\obj\Debug\netcoreapp3.1\HelloWebClient.AssemblyInfo.cs

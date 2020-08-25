@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "L6dlbs6iheRxpr4Vu1vgX2V/cKCOPUbB0I466D6IDBIF4hcSZMiGV3kWN0gFiirim2+qzyXjbT4xnXwM9tFA+A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jekor\\OneDrive\\Desktop\\CSHP220\\Projects\\CSHP230\\HelloWorldService\\HelloWebClient\\HelloWebClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jekor\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
